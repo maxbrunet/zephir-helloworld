@@ -1,0 +1,11 @@
+options:
+  distribute_files: ['helloworld/ext/modules/helloworld.so']
+
+build:
+  - commands:
+    - 'cd helloworld && zephir compile'
+
+release_per_server:
+  - roles: ['api']
+    commands:
+      - 'sudo service php-fpm restart'
