@@ -3,7 +3,7 @@ options:
 
 build:
   - commands:
-    - 'cd helloworld && zephir compile'
+    - 'sh -c "cd helloworld && zephir compile"'
 
 release_per_server:
   - roles: ['api']
