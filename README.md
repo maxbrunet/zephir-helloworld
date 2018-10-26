@@ -9,7 +9,6 @@ Zephir Helloworld from the [Zephir documentation](https://docs.zephir-lang.com/e
 ## Build
 
 ```
-cd helloworld
 zephir build
 ```
 

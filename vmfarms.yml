@@ -1,9 +1,9 @@
 options:
-  distribute_files: ['helloworld/ext/modules/helloworld.so']
+  distribute_files: ['ext/modules/helloworld.so']
 
 build:
   - commands:
-    - 'sh -c "cd helloworld && zephir compile"'
+    - zephir compile
 
 release_per_server:
   - roles: ['api']
